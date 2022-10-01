@@ -1,0 +1,36 @@
+{
+  "name": "homebridge-fan-system",
+  "displayName": "Homebridge RGB Led System",
+  "version": "1.0.0",
+  "description": "LED RGB plugin for Homebridge",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm install -g && homebridge -I -D",
+    "build": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DomiBot/homebridge-fan-system.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "fan-system",
+    "fan",
+    "homebridge",
+	"blynk"
+  ],
+  "author": "Domi",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/DomiBot/homebridge-fan-system/issues"
+  },
+  "homepage": "https://github.com/DomiBot/homebridge-fan-system#readme",
+  "engines": {
+    "node": ">=10",
+    "homebridge": ">=1.0.0"
+  },
+  "dependencies": {
+	"node-fetch": "^2.6.7",
+    "color-convert": "^2.0.0"
+  }
+}

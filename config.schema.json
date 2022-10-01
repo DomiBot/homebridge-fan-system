@@ -1,0 +1,46 @@
+{
+    "pluginAlias": "fan-system",
+    "pluginType": "accessory",
+    "singular": true,
+    "headerDisplay": "Blynk FAN plugin for Homebridge.",
+    
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "required": true,
+                "default": "Ventilateur",
+                "description": "A unique name for the accessory. It will be used as the accessory name in HomeKit."
+            },
+            "ip": {
+                "title": "Blynk ip",
+                "type": "string",
+                "required": true,
+                "placeholder": "0.0.0.0",
+                "description": "Blynk ip server local."
+            },
+            "token": {
+                "title": "Blynk Token",
+                "type": "string",
+                "required": true,
+                "placeholder": "put token",
+                "description": "Blynk server token."
+            },
+            "vpin": {
+                "title": "Blynk virtual Pin",
+                "type": "integer",
+                "required": true,
+                "placeholder": "put virtual pin here",
+                "description": "Blynk server vpin."
+            }
+        }
+    },
+	"layout": [
+    "name",
+	"ip",
+	"token",
+	"vpin"
+  ]
+}
